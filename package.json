@@ -9,6 +9,7 @@
     "swiper": "^9.4.1"
   },
   "scripts": {
-    "build" : "tailwindcss build -i src/css/input.css -o dist/output.css"
+    "build": "npx tailwindcss -i input.css -o ./dist/css/style.css",
+    "watch": "npx tailwindcss -i input.css -o ./dist/css/style.css --watch"
   }
 }
