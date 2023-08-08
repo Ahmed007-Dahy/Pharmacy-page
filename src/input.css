@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .whole-layout {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .bg-header {
+        @apply absolute top-0 left-0 -z-10 w-full h-full 2xl:w-593 2xl:h-full blur-lg bg-gradient-to-r from-gradient-color-first from-10% to-gradient-color-second to-100% xl:rounded-br-full xl:w-584 xl:h-128;
+    }
+    .bg-footer {
+        @apply absolute top-0 left-0 -z-10 w-full h-full 2xl:w-593 2xl:h-full blur-lg bg-gradient-to-r from-footer-color-first from-5% to-page-color to-100% xl:rounded-tl-full xl:h-127;
+    }
+    .responsive-layout {
+        @apply container max-w-full w-full grid items-center mx-auto grid-flow-col auto-cols-auto;
+    }
+
+    .heading-style {
+        @apply font-Gabriela text-primary-color text-4xl 2xl:text-5xl;
+    }
+
+    .underline-style {
+        @apply w-28 2xl:w-32;
+    }
+
+    .transition-style {
+        @apply transition-all ease-in-out duration-500;
+    }
+
+    .how-it-work__heading {
+        @apply font-Poppins text-primary-color text-lg font-bold text-center mt-7 mb-5 lg:text-xl 2xl:text-2xl 3xl:text-3xl;
+    }
+
+    .how-it-work__img {
+        @apply w-auto mx-auto;
+    }
+
+    .how-it-work__paragraph {
+        @apply w-580 mx-auto text-center font-Poppins text-paragraph-color2 text-lg text-opacity-80 2xl:text-xxl 3xl:text-2xl;
+    }
+
+    .Our-Categories__content {
+        @apply bg-Our-Categories-photos border-2 border-solid border-Our-Categories-borders rounded-full flex flex-col items-center;
+    }
+
+    .Our-Categories__text {
+        @apply font-Poppins text-black font-medium text-xl;
+    }
+    .Our-Reviews-box {
+        @apply bg-Our-Reviews-box border-4 border-Our-Categories-borders rounded-xl shadow-lg shadow-gray-300;
+    }
+}
