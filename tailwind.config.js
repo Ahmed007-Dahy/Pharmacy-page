@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./dist/**/*.{html,js}'],
+    content: ['./src/**/*.{html,js}'],
     theme: {
         screens: {
             sm: '640px',
@@ -78,7 +78,7 @@ module.exports = {
                 593: '93%',
                 590: '98%',
                 584: '90%',
-                580: '95%',
+                580: '96%',
                 585: '81%',
                 587: '86%',
                 586: '82%',
